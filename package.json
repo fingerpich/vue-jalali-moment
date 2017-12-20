@@ -1,14 +1,14 @@
 {
   "name": "vue-moment",
-  "version": "3.1.0",
-  "description": "Handy Moment.js filters for your Vue.js project",
+  "version": "1.0.0",
+  "description": "jalali(khorshidi, shamsi, شمسی, خورشیدی, جلالی) filters for your Vue.js project",
   "main": "vue-moment.js",
   "scripts": {
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brockpetrie/vue-moment.git"
+    "url": "git+https://github.com/fingerpich/vue-jalali-moment.git"
   },
   "keywords": [
     "vue",
@@ -19,14 +19,14 @@
     "moment",
     "moment.js"
   ],
-  "author": "brockpetrie",
+  "author": "Mojtaba Zarei(Fingerpich)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brockpetrie/vue-moment/issues"
+    "url": "https://github.com/fingerpich/vue-jalali-moment/issues"
   },
-  "homepage": "https://github.com/brockpetrie/vue-moment#readme",
+  "homepage": "https://github.com/fingerpich/vue-jalali-moment#readme",
   "dependencies": {
-    "moment": "^2.11.1"
+    "jalali-moment": "^3.0.8"
   },
   "peerDependencies": {
     "vue": ">=1.x.x"

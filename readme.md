@@ -1,20 +1,20 @@
-# vue-moment
-[![npm version](https://badge.fury.io/js/vue-moment.svg)](https://badge.fury.io/js/vue-moment) [![Build Status](https://travis-ci.org/brockpetrie/vue-moment.svg?branch=master)](https://travis-ci.org/brockpetrie/vue-moment)
+# vue-jalali-moment
+[![npm version](https://badge.fury.io/js/vue-jalali-moment.svg)](https://badge.fury.io/js/vue-moment) [![Build Status](https://travis-ci.org/brockpetrie/vue-moment.svg?branch=master)](https://travis-ci.org/fingerpich/vue-jalali-moment)
 
-Handy [Moment.js](http://www.momentjs.com) filters for your [Vue.js](http://vuejs.org/) project.
+[jalali](https://github.com/fingerpich/jalali-moment)(khorshidi, shamsi) filters for your [Vue.js](http://vuejs.org/) project.
 
 ## Installation
 
 Install via NPM...
 
 ```sh
-$ npm install vue-moment
+$ npm install vue-jalali-moment
 ```
 
 ...and require the plugin like so:
 
 ```js
-Vue.use(require('vue-moment'));
+Vue.use(require('vue-jalali-moment'));
 ```
 
 ## Usage
@@ -32,7 +32,8 @@ Simply set `moment` as the filtering function and you're good to go. At least on
 Moment.js expects your input to be either: a valid ISO 8601 formatted string (see <http://momentjs.com/docs/#/parsing/string/>), a valid `Date` object, a Unix timestamp (must be passed as a Number), or a date string with an accompanying format pattern (i.e. when you know the format of the date input). For the latter, `vue-moment` allows you to pass your date and format pattern(s) as an array, like such:
 
 ```html
-<span>{{ [ someDate, "MM.DD.YY" ] | moment("dddd, MMMM Do YYYY") }}</span>
+<span>{{ [ someDate, "MM.DD.YY" ] | moment("jdddd, jMMMM Do jYYYY") }}</span>
+<span>{{ [ jalaliDateString, "jYY-jMM-jDD" ] | moment("dddd, MMMM Do YYYY") }}</span>
 <!-- or when you want to parse against more than one pattern -->
 <span>{{ [ someDate, ["MM.DD.YY", "MM-DD-YY", "MM-DD-YYYY"] ] | moment("dddd, MMMM Do YYYY") }}</span>
 ```
@@ -49,7 +50,9 @@ This is the default filtering option. Formats the date against a string of token
 
 ```html
 <span>{{ someDate | moment("YYYY") }}</span>
-<!-- e.g. "2010" -->
+<!-- e.g. "2017" -->
+<span>{{ someDate | moment("jYYYY") }}</span>
+<!-- e.g. "1386" -->
 <span>{{ someDate | moment("ddd, hA") }}</span>
 <!-- e.g. "Sun, 3PM" -->
 <span>{{ someDate | moment("dddd, MMMM Do YYYY, h:mm:ss a") }}</span>
