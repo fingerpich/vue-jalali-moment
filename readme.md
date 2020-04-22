@@ -169,7 +169,7 @@ There's some built-in (and not thoroughly tested) support for chaining, like so:
 <span>{{ someDate | moment("add", "2 years, 8 days", "subtract", "3 hours", "ddd, hA") }}</span>
 ```
 
-This would add 2 years and 8 months to the date, then subtract 3 hours, then format the resulting date.
+This would add 2 years and 8 days to the date, then subtract 3 hours, then format the resulting date.
 
 
 ## Configuration
